@@ -1,0 +1,19 @@
+2024-05-12 21:10:12 - System startup completed
+2024-05-12 21:11:05 - User admin logged in successfully
+2024-05-12 21:12:44 - File /etc/passwd accessed by user admin
+
+2024-05-12 21:14:01 - Failed login attempt for user root from IP 192.168.1.66
+2024-05-12 21:14:05 - Failed login attempt for user root from IP 192.168.1.66
+2024-05-12 21:14:09 - Failed login attempt for user root from IP 192.168.1.66
+2024-05-12 21:14:12 - Failed login attempt for user root from IP 192.168.1.66
+2024-05-12 21:14:15 - Failed login attempt for user root from IP 192.168.1.66
+2024-05-12 21:14:19 - Failed login attempt for user root from IP 192.168.1.66
+2024-05-12 21:14:22 - Failed login attempt for user root from IP 192.168.1.66
+2024-05-12 21:14:25 - Failed login attempt for user root from IP 192.168.1.66
+2024-05-12 21:14:29 - Failed login attempt for user root from IP 192.168.1.66
+2024-05-12 21:14:33 - Failed login attempt for user root from IP 192.168.1.66
+
+2024-05-12 21:16:01 - System check OK
+2024-05-12 21:17:44 - Failed login attempt for user guest from IP 192.168.1.88
+2024-05-12 21:20:45 - User john logged in successfully
+2024-05-12 21:21:32 - File /home/john/documents/report.docx opened
