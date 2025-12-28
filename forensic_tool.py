@@ -11,17 +11,15 @@ from collections import defaultdict
 
 def compute_hashes(file_path, block_size=4096):
     """
-    Computes MD5 and SHA-256 hashes for a given file.
+    Computes SHA-256 hashes for a given file.
     """
-    md5 = hashlib.md5()
     sha256 = hashlib.sha256()
 
     with open(file_path, "rb") as file:
         while chunk := file.read(block_size):
-            md5.update(chunk)
             sha256.update(chunk)
 
-    return md5.hexdigest(), sha256.hexdigest()
+    return sha256.hexdigest()
 
 
 def get_file_creation_time(file_path):
@@ -47,14 +45,13 @@ def extract_file_metadata(file_path):
     created = get_file_creation_time(file_path)
     modified = datetime.fromtimestamp(stats.st_mtime)
 
-    md5_value, sha256_value = compute_hashes(file_path)
+    sha256_value = compute_hashes(file_path)
 
     return {
         "file_path": file_path,
         "size_bytes": size,
         "created": created,
         "modified": modified,
-        "md5": md5_value,
         "sha256": sha256_value
     }
 
@@ -113,7 +110,6 @@ def generate_forensic_report(metadata_list, suspicious_logs, brute_force_ips, ou
             rpt.write(f"Size (bytes): {m['size_bytes']}\n")
             rpt.write(f"Created: {m['created']}\n")
             rpt.write(f"Modified: {m['modified']}\n")
-            rpt.write(f"MD5: {m['md5']}\n")
             rpt.write(f"SHA-256: {m['sha256']}\n")
             rpt.write("-" * 40 + "\n")
 

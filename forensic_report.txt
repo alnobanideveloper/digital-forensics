@@ -1,0 +1,51 @@
+============================================================
+                FORENSIC ANALYSIS REPORT
+============================================================
+
+===== FILE METADATA & HASHES =====
+
+File: evidence_files/example1.txt
+Size (bytes): 48
+Created: 2025-11-20 11:25:41.575782
+Modified: 2025-11-20 11:26:02.751128
+SHA-256: c423ceb0723842952f223d68f5281f7134ae615cb81d3a46f1c3ffa992d673ad
+----------------------------------------
+File: evidence_files/report.pdf
+Size (bytes): 37988
+Created: 2025-11-20 11:27:41.065967
+Modified: 2025-11-20 11:27:41.503417
+SHA-256: 1d41f67dae94e88017ccb013a1f2124f853a5027c309e4f9e16d28187a592fea
+----------------------------------------
+File: evidence_files/image1.jpg
+Size (bytes): 53603
+Created: 2025-11-20 11:31:38.912915
+Modified: 2025-11-20 11:31:39.006601
+SHA-256: 1f8ae425f4710eb4c340bed2e39c7255bff330a09c914bde7aee16ba8e0a3e24
+----------------------------------------
+File: evidence_files/notes.txt
+Size (bytes): 47
+Created: 2025-12-24 19:22:16.037146
+Modified: 2025-12-24 19:22:16.119573
+SHA-256: d81ca82ebf9c1d819374ad576363c1eabc577b46ab5c4f229727d660dbfb3c5e
+----------------------------------------
+
+===== SUSPICIOUS LOG ENTRIES =====
+
+2024-05-12 21:14:01 - Failed login attempt for user root from IP 192.168.1.66
+2024-05-12 21:14:05 - Failed login attempt for user root from IP 192.168.1.66
+2024-05-12 21:14:09 - Failed login attempt for user root from IP 192.168.1.66
+2024-05-12 21:14:12 - Failed login attempt for user root from IP 192.168.1.66
+2024-05-12 21:14:15 - Failed login attempt for user root from IP 192.168.1.66
+2024-05-12 21:14:19 - Failed login attempt for user root from IP 192.168.1.66
+2024-05-12 21:14:22 - Failed login attempt for user root from IP 192.168.1.66
+2024-05-12 21:14:25 - Failed login attempt for user root from IP 192.168.1.66
+2024-05-12 21:14:29 - Failed login attempt for user root from IP 192.168.1.66
+2024-05-12 21:14:33 - Failed login attempt for user root from IP 192.168.1.66
+2024-05-12 21:17:44 - Failed login attempt for user guest from IP 192.168.1.88
+
+===== BRUTE FORCE ANALYSIS =====
+
+Brute-force attack detected from:
+- 192.168.1.66
+
+Report generated successfully.
